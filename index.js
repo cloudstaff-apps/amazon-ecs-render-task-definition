@@ -40,7 +40,7 @@ async function run() {
     }
 
     if (commandRun) {
-      taskDefContents.containerDef.command = commandRun;
+      containerDef.command = commandRun;
     }
 
     if (environmentVariables) {
