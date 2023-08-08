@@ -24,6 +24,8 @@ To insert the image URI `amazon/amazon-ecs-sample:latest` as the image for the `
         task-definition: task-definition.json
         container-name: web
         image: amazon/amazon-ecs-sample:latest
+        family: updated-family-name
+        command: '["php", "artisan", "migrate"]'
         environment-variables: "LOG_LEVEL=info"
 
     - name: Deploy to Amazon ECS service
