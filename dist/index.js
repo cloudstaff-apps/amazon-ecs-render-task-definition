@@ -1425,7 +1425,7 @@ async function run() {
     }
 
     if (commandRun) {
-      containerDef.command = commandRun;
+      containerDef.command = JSON.parse(commandRun);
     }
 
     if (environmentVariables) {
