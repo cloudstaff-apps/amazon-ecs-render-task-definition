@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - nitin
 
 name: Package
 
@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: master
+        ref: nitin
     - name: Package
       run: |
         npm ci
